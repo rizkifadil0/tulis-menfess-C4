@@ -7,6 +7,8 @@ CREATE TABLE IF NOT EXISTS menfess (
     -- TODO : Tambahkan kolom likes & dislikes di bawah ini --
     -- Clue: Gunakan tipe data INT dan DEFAULT 0 --
 );
+ALTER TABLE menfess ADD COLUMN likes INT DEFAULT 0;
+ALTER TABLE menfess ADD COLUMN dislikes INT DEFAULT 0;
 
 -- Dummy Data (Biar pas pertama run ga kosong melompong)
 INSERT INTO menfess (sender, content, color) VALUES 
